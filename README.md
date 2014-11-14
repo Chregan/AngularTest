@@ -12,10 +12,10 @@
 'You need to install corodva ionic framework.
 
 1. Open command prompt 
-2. Execute npm install -g cordova ionic - this will install latest corodva globally in your system
+2. Execute npm install -g cordova ionic - this will install latest cordova globally in your system
 
 
 ## How to build this app
 
 1. Open command prompt and cd to root of the repository e.g cd angulartest
-2. Execute ionic build android - it will generate a build .apk file in root/platforms/android/amt-build/CordovaApp-debug.apk
+2. Execute ionic build android - it will generate a build .apk file in root/platforms/android/ant-build/CordovaApp-debug.apk
