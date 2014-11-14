@@ -1,0 +1,15 @@
+<div class"container">
+
+<div class="list-group" >
+   <input class="form-control" type="text" ng-model="searchtext" name="search" placeholder="Enter Text to filter results">
+  
+   <span ng-class="getClass(data.commit.message)" class="list-group-item" ng-repeat="data in commits| limitTo:25 | filter:searchtext  track by $index ">
+      <h4 class="list-group-item-heading" ng-bind-html="data.commit.author.name">{{}}</h4>
+      <span ng-class="{color:checkEnd}" class="list-group-item-text" ng-bind-html="data.commit.message | to_trusted "></span>
+   </span>
+  
+</div>
+ 
+</div>
+
+
