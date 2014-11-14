@@ -1,15 +1,5 @@
 angular.module('starter.controllers', [])
 
-    .filter('searchFilter', function () {
-        return function (item, val) {
-            alert(item);
-            if (item.message.indexOf(val) > 0) {
-                return true;
-            }
-            return false;
-        }
-    })
-
 .controller('DashCtrl', ['$scope', 'gitService', '$ionicLoading', '$filter', function ($scope, gitService, $ionicLoading, $filter) {
 
     $scope.Commits = [];
