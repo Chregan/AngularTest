@@ -1,0 +1,19 @@
+<ion-view title="Dashboard">
+    
+    <ion-content class="padding">
+        <label class="item item-input">
+            <span class="input-label" >Search</span>
+            <input type="text" ng-keyup="filterRecords($event)">
+        </label>
+        <ion-list show-delete="false"
+                  show-reorder="false"
+                  can-swipe="true">
+            <ion-item ng-repeat="commit in Commits"
+                      class="item-thumbnail-left">
+                <img ng-src="{{commit.committer.avatar_url}}">
+                <h2>{{commit.sha}}</h2>
+                <p class="{{commit.highlighted}}">{{commit.message}}</p>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>
