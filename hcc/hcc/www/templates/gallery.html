@@ -1,0 +1,21 @@
+<div class="scrollable">
+  <div class="scrollable-content">
+<div class="gallery">
+
+<div class="row" >
+<ul>
+ <li ng-repeat="pic in pics"><a href="#">
+ 	<img ng-src="{{pic.images.thumbnail.url}}" alt="gallery" /></a></li>
+</ul>
+</div>
+
+<div class="row" >
+   <button ng-click="loadmore()" class="btn sign_up btn-primary btn-block">
+     Load More
+    </button>
+</div>
+</div>
+  </div>
+</div>
+
+
