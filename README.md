@@ -11,7 +11,7 @@ In order to be considered for the AngularJs/Phonegap position, you must complete
 2. Create a *build* folder to contain your code.
 3. In the *build* directory, scaffold a basic Angular app using [Yeoman](http://yeoman.io/) or similar. Then create a module that does the following:
 	- Connect to the [Github API](http://developer.github.com/)
-	- Find the [joyent/node](https://github.com/joyent/node) repository
+	- Find the [nodejs/node](https://github.com/nodejs/node) repository
 	- Find the most recent commits (choose at least 25 or more of the commits)
 4. Create a view that uses the above module to display the recent commits by author.
 	- If the commit hash ends in a number, color that row to light blue (#E6F1F6).
