@@ -1,0 +1,9 @@
+<div class="well" ng-class="{numeric: isLastCharacterNumeric(commit.sha)}" ng-repeat="commit in commits">
+    <div style="width:50%;text-align:left">
+      {{commit.commit.author.name}} 
+      (<a href="mailto:{{commit.commit.author.email}}">{{commit.commit.author.email}}</a>)
+    </div>
+    <div style="width:50%;text-align:right;float:right">
+      {{commit.commit.author.date | date:'dd-MMM-yyyy HH:mm'}}
+    </div>
+</div>
