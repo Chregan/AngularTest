@@ -1,0 +1,21 @@
+<ion-view title="" class="primary-bg" id="sign-in">
+  <div class="bar bar-header bar-stable">
+    <label class="item item-input">
+      <input type="text" name="ghusername" id="ghusername" ng-model="gh.username" placeholder="Github username...">
+    </label>
+      <button class="button button-balanced" ng-click="findcommits(gh)">Pull Commits </button>
+  </div>
+  <div  class="bar bar-subheader">  
+    <b>Total commits {{total}}</b>
+  </div>
+  <ion-content class='content'>
+    <div class="list card" ng-repeat="result in results">
+      <div>
+        {{result.commit.committer.name}},{{result.commit.committer.date}}
+      </div>
+      <div>	
+        {{result.commit.message}}
+      </div>
+    </div>
+  </ion-content>
+</ion-view>
